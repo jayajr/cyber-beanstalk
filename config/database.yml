@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: cyber-beanstalk_production
-  username: cyber-beanstalk
-  password: <%= ENV['CYBER-BEANSTALK_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
