@@ -6,10 +6,10 @@ deployment:
     branch: develop
     commands:
       - eb use cb-dev-env --profile default
-      - eb deploy --profile default
+      - eb deploy cb-dev-env --profile default
   production:
     branch: master
     commands:
       - eb use cb-prod-env --profile default
-      - eb deploy -- profile default
+      - eb deploy cb-prod-env --profile default
       
