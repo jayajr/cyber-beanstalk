@@ -1,0 +1,9 @@
+dependencies:
+  pre:
+    - pip install awebcli
+deployment:
+  develop:
+    branch: develop
+    commands:
+      - eb use cb-deb-env
+      - eb deploy --prof
