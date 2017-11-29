@@ -1,6 +1,8 @@
 branch-defaults:
   develop:
     environment: cb-dev-env
+  master:
+    environment: cb-prod-env
 environment-defaults:
   cb-dev-env:
     branch: null
